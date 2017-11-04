@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后代选择器</title>
+    <style>
+        div p{
+            color: blueviolet;
+        }
+        ul li{
+            color: yellow;
+        }
+        p{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<p>我是段落</p>
+<div>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <ul>
+        <li>
+            我是段落
+        </li>
+    </ul>
+</div>
+<p>我是段落</p>
+<!--
+格式：
+标签1 标签2 标签3{
+     属性:值;
+}
+可以和其他选择器结合来使用
+-->
+</body>
+</html>

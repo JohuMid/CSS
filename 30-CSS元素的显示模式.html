@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS元素的显示模式</title>
+    <style>
+        div{
+            background:red;
+            width: 200px;
+            height: 200px;
+        }
+        span{
+            background: blue;
+            width: 200px;
+            height: 200px;
+        }
+        img{
+
+        }
+    </style>
+</head>
+<body>
+
+<div>我是div</div>
+<p>我是段落</p>
+<h1>我是标题</h1>
+<hr>
+<span>我是span</span>
+<!--
+在HTML中所有标签分为两类，容器级和文本级
+在CSS中所有的标签也分为两类，快级元素和行内元素
+1、块级元素会独占一行
+   行内元素不会独占一行
+
+容器级的标签
+div/ul/h/ol/dl/li/dt/dd
+文本级的标签
+span/p/buis/strong/em/ins/del/
+
+2、块级元素
+div/ul/h/ol/dl/li/dt/dd/p
+如果没有设置宽度，那么默认和父元素一样宽
+
+行内元素
+span/buis/strong/em/ins/del/
+行内元素是不可以设置宽度和高度的
+
+所有的容器级都是块级元素p也是
+
+文本级除了p都是行内元素
+
+3、 行内块级元素
+为了即能不独占一行，又可以设置高度和宽度
+-->
+</body>
+</html>

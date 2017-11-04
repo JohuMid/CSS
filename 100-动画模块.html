@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画模块</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        div{
+            width: 100px;
+            height: 50px;
+            background-color: grey;
+            /*transition-property: margin-left;*/
+            /*transition-duration: 3s;*/
+            /*1告诉系统需要执行哪个动画*/
+            animation-name: lnj;
+            /*3告诉系统动画持续的时长*/
+            animation-duration: 3s;
+        }
+        /*2告诉系统我们需要自己创建一个动画*/
+        @keyframes lnj {
+            from{
+                margin-left: 0;
+            }
+            to{
+                margin-left: 500px;
+            }
+        }
+        /*告诉系统动画持续的时长*/
+
+        /*div:hover{*/
+            /*margin-left:500px;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div></div>
+<!--
+1、过渡必须人为触发
+动画不需要
+2、都是添加动画
+都是新增属性
+都需要满足三要素
+
+
+-->
+</body>
+</html>

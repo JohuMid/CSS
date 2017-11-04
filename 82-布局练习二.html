@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>布局练习二</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 520px;
+            height: 280px;
+            border: 2px solid gold;
+            margin: 0 auto;
+            margin-top: 100px;
+            left: 0;
+            top: 0;
+            position: relative;
+        }
+        span{
+            margin-top: 10px;
+            width: 40px;
+
+            background-color: rgba(0,0,0,0.3);
+            display: inline-block;
+            font-size: 50px;
+            color: white;
+            text-align: center;
+            line-height: 80px;
+        }
+        ol{
+            list-style-type: none;
+            width: 200px;
+            height: 40px;
+            background-color: rgba(255,255,255,0.7);
+            position: absolute;
+            left: 320px;
+            top: 240px;
+        }
+        ol li{
+            float: left;
+            width: 40px;
+            height: 40px;
+            border: 1px solid gold;
+            box-sizing: border-box;
+            line-height: 40px;
+            text-align: center;
+        }
+        div .leftArrow{
+             left: 0px;
+             top: 98px;
+             position: absolute;
+        }
+        div .rightArrow{
+            left: 480px;
+            top: 98px;
+            position: absolute;
+        }
+        div span a{
+            text-decoration: none;
+            color: white;
+        }
+        div ol a{
+            text-decoration: none;
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="images/ad.jpg">
+    <span class="leftArrow"><a href="#">&lt;</a></span>
+    <span class="rightArrow"><a href="#">&gt;</a></span>
+    <ol>
+        <a href="#"><li>1</li></a>
+        <a href="#"><li>2</li></a>
+        <a href="#"><li>3</li></a>
+        <a href="#"><li>4</li></a>
+        <a href="#"><li>5</li></a>
+    </ol>
+</div>
+</body>
+</html>

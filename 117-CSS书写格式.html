@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS书写格式</title>
+    <!--<style>-->
+        <!--div{-->
+            <!--color: red;-->
+        <!--}-->
+    <!--</style>-->
+    <!--<link rel="stylesheet" href="117-CSS书写格式.css">-->
+    <style>
+        @import "117-CSS书写格式.css";
+    </style>
+</head>
+<body>
+<!--
+1、行内样式：
+可以直接将CSS代码写在开始标签当中
+
+2、内嵌样式：
+可以在一对head标签当中写上一对style标签，然后编写CSS代码
+
+3、外链格式： 企业开发中一般都使用外链样式
+可以单独新建一个CSS文件，通过<link rel="stylesheet" href="117-CSS书写格式.css">关联两个文件
+
+4、导入样式
+可以单独新建一个CSS文件，
+<style>
+@import "117-CSS书写格式.css";
+</style>
+
+1、导入样式有兼容问题，所以不用它
+2、导入样式先加载结构，后加载样式
+外链样式用户体验好
+-->
+<div style="color: red">我是div</div>
+</body>
+</html>

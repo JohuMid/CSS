@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子阴影和文字阴影</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+            margin: 100px auto;
+            text-align: center;
+            line-height: 200px;
+            /*box-shadow: 10px 10px 10px 0px grey inset;*/
+            /*快速设置*/
+            box-shadow: 10px 10px 10px;
+            color: #5aff76;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background-color: pink;
+            text-align: center;
+            font-size: 40px;
+            line-height: 200px;
+            text-shadow: 5px 5px 5px grey;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">我是盒子</div>
+<div class="box2">我是盒子</div>
+<!--
+1、box-shadow：h-shadow v-shadow blur spread   color     inset;
+               水平偏移 垂直偏移 模糊度 阴影拓展 阴影颜色 内外阴影
+2、如果不设置阴影颜色，则阴影颜色随文字颜色设置
+
+注意点：
+盒子阴影分为内外阴影，默认情况下是外阴影
+
+3、文字阴影不支持阴影拓展，内外阴影
+文字阴影如果不设置阴影颜色，则阴影颜色随文字颜色设置
+-->
+</body>
+</html>

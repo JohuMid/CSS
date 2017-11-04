@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文字属性的缩写</title>
+    <style>
+        p{
+            /*font-style: italic;*/
+            /*!*倾斜*!*/
+            /*font-weight: 900;*/
+            /*!*加粗*!*/
+            /*font-size: 50px;*/
+            /*!*大小*!*/
+            /*font-family: "楷体";*/
+            /*!*字体用双引号*!*/
+            font: italic bold 20px "楷体";
+        }
+    </style>
+</head>
+<body>
+<p>我是文字</p>
+<!--
+缩写格式：
+font:style weight size family;
+font: italic bold 20px "楷体";
+1、style和weight可以省略
+2、size和family不能省略
+3、size写在family的前面写在所有属性的最后面
+-->
+</body>
+</html>

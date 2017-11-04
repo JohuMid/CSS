@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清除浮动方式四</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            border: 1px solid #000;
+        }
+        .box1{
+            background-color: #8eff35;
+            /*兼容ie6*/
+            *zoom:1;
+        }
+        .box2{
+            float: left;
+            background-color: #41baff;
+        }
+        .box1 p{
+
+            width: 100px;
+            background-color: #e85450;
+        }
+        .box2 p{
+
+
+            width: 100px;
+            background-color: #ffddd9;
+        }
+        p{
+            float: left;
+        }
+        .box1::after{
+            /*设置内添加内容容为空*/
+            content:"";
+            /*块级元素*/
+            display: block;
+            /*设置添加的子元素高度为0*/
+            height: 0;
+            /*添加的元素隐藏*/
+            visibility: hidden;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <p>我是文字1</p>
+    <p>我是文字1</p>
+    <p>我是文字1</p>
+</div>
+
+<div class="box2">
+    <p>我是文字2</p>
+    <p>我是文字2</p>
+    <p>我是文字2</p>
+</div>
+
+</body>
+</html>

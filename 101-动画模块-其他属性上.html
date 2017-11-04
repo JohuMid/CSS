@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画模块-其他属性上</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        div {
+            width: 100px;
+            height: 50px;
+            background-color: grey;
+            animation-name: lnj;
+            animation-duration: 3s;
+            /*延迟多少时间进行动画*/
+            /*animation-delay: 2s;*/
+            /*动画执行的速度变化*/
+            animation-timing-function: linear;
+            /*动画循环次数*/
+            animation-iteration-count: 3;
+            /*是否需要做往返动画*/
+            animation-direction: alternate;
+                                /*normal*/
+            /*控制动画状态*/
+            animation-play-state: running;
+        }
+        @keyframes lnj {
+            0%{
+                margin-left: 0;
+                margin-top: 0;
+            }
+            25%{
+                margin-left: 500px;
+                margin-top: 0;
+            }
+            50%{
+                margin-left: 500px;
+                margin-top: 500px;
+            }
+            75%{
+                margin-left: 0;
+                margin-top: 500px;
+            }
+            100%{
+                margin-left: 0;
+
+            }
+        }
+        div:hover{
+            animation-play-state: paused;
+            /*动画暂停*/
+        }
+
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

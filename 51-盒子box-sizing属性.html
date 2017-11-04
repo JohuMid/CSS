@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子box-sizing属性</title>
+    <style>
+        .content{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+        .aside{
+            width: 100px;
+            height: 200px;
+            background-color: green;
+            float: left;
+        }
+        .article{
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            float: right;
+            border: 20px solid #000;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="aside"></div>
+    <div class="article"></div>
+</div>
+<!--
+1、CSS3中新增了一个box-sizing属性在增加了padding和border后不变
+增加了padding和border之后，保证元素宽高不变，减去内容的宽高
+2、box-sizing: border-box;
+元素的宽高==width的值
+-->
+</body>
+</html>

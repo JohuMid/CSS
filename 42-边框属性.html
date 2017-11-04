@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框属性</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+            /*border: 5px solid red;同时设置*/
+            border-top: 10px solid red;
+            border-left: 10px dashed orange;
+            border-right:10px dotted yellow;
+            border-bottom:10px double green;
+            /*分开设置*/
+            
+        }
+        /*边框属性的格式
+        1.1连写（同时设置四条边的边框）
+        border:边框的宽度 边框的样式 边框的颜色
+        设置边框的快捷键：bd + tab
+        连写属性中颜色可以省略，默认黑色
+        不能省略样式
+        宽度可以省略
+        1.2连写（分别设置四条边的边框）
+        border-top
+        border-right
+        border-left
+        border-bottom
+
+        solid:默认
+        dashed虚线
+        dotted点
+        double双横线
+
+        */
+        /*border: 宽度 样式颜色*/
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>权重问题</title>
+    <style>
+        /*#identity1 .box2{*/
+            /*color: red;*/
+        /*}*/
+        /*.box1 .box2{*/
+            /*color: green;*/
+        /*}*/
+        /*div ul li p{*/
+            /*color: blue;*/
+        /*}*/
+        /*.box1 .box2{*/
+            /*color: blue;*/
+        /*}*/
+        /*div .box2{*/
+            /*color: green;*/
+        /*}*/
+        #identity1 ul p{
+            color: green;
+        }
+        #identity1 ul li p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="identity1" class="box1">
+    <ul>
+        <li>
+            <p id="identity2" class="box2">我是段落</p>
+        </li>
+    </ul>
+</div>
+<!--
+1、当多个选择去混合在一起使用时，我们可以通过计算权重，来判断谁的优先级最高
+2、权重的计算规则
+2.1首先先计算选择器中有多少个id,id多的选择器优先级最高.
+2.2如果id的个数一样，那么在看类名的个数,类名多的优先级最高
+2.3如果类名的个数一样，那再看标签名称的个数，标签名称个数多的优先级最高
+2.4如果id 类名 标签 都一样，就不会继续比较下去，谁写在后面听谁的。
+
+注意点：
+1、只有选择器是直接选中才会比较权重   直接选中>间接选中
+-->
+</body>
+</html>

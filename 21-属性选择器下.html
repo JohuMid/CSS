@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器下</title>
+    <style>
+        /*img[alt^=abc]{*/
+            /*color: red;*/
+        /*}*/
+        /*img[alt|=abc]{*/
+            /*color: red;*/
+        /*}*/
+        /*img[alt$=www]{*/
+            /*color: burlywood;*/
+        /*}*/
+        img[alt~=abc]{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<!--
+属性的取值是以什么开头的
+[attribute|=value]CSS2
+[attribute^=value]CSS3
+CSS2只能找到value开头，而且隔开的
+
+属性的取值是以什么结尾的
+[attribute$=value]CSS3
+
+属性的取值是否包含某个特定的值的
+[attribute~=value]CSS2
+[attribute*=value]CSS3
+CSS2只能找到value被空格隔开的
+
+-->
+<img src="" alt="abc-123">
+<img src="" alt="abc-456">
+<img src="" alt="789abc">
+<img src="" alt="www abc">
+<img src="" alt="abc-www">
+<img src="" alt="456www">
+<img src="" alt="123www">
+<img src="" alt="789www">
+
+</body>
+</html>

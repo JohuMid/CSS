@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>优先级之important</title>
+    <style>
+        #identity {
+            color: purple;
+        }
+        p{
+            color: green;
+        }
+        li{
+            color: red !important;
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <li>
+        <p id="identity" class="para">我是段落</p>
+    </li>
+</ul>
+<!--
+1、用于提升某个直接选中标签的选择器中的某个属性的优先级的，可以将被指定的
+属性的优先级提升为最高，
+2、!important只能用于直接选中，不能用于间接选中。
+3、!important只能提升指定的属性的优先级，其他属性的优先级，不会被提升。
+
+4、格式：color: red !important;
+-->
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2D转换模块-形变中心点</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            margin: 100px auto;
+            position: relative;
+        }
+        ul li{
+            list-style: none;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            transform-origin: 200px 0px;
+        }
+        ul li:nth-child(1){
+            background-color: grey;
+            transform: rotate(30deg);
+        }
+        ul li:nth-child(2){
+            background-color: orangered;
+            transform: rotate(5deg);
+        }
+        ul li:nth-child(3){
+            background-color: darkslategrey;
+            transform: rotate(70deg);
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<!--
+默认情况下所有的元素都是以自己的中心点作为参考来旋转的，可以改变参考点
+
+transform-origin: 0px 0px;改变参考点为左上角
+取值有三种形式：transform-origin: 0% 0%;
+transform-origin: left top;
+-->
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清除浮动方式二</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            border: 1px solid #000;
+        }
+        .box1{
+
+            background-color: #8eff35;
+        }
+        .box2{
+            margin-top: 50px;
+            clear: left;
+            background-color: #41baff;
+        }
+        .box1 p{
+            float: left;
+            width: 100px;
+            background-color: #e85450;
+        }
+        .box2 p{
+
+            float: left;
+            width: 100px;
+            background-color: #ffddd9;
+        }
+        p{
+            float: left;
+        }
+        .dd{
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            border: 1px solid #000;
+        }
+        .ddd{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <p>我是文字1</p>
+    <p>我是文字1</p>
+    <p>我是文字1</p>
+</div>
+<div class="box2">
+    <p>我是文字2</p>
+    <p>我是文字2</p>
+    <p>我是文字2</p>
+</div>
+<!--<div class="dd">-->
+    <!--<div class="ddd"></div>-->
+<!--</div>-->
+<!--
+1、清除浮动的第二种方式
+clear: none;
+按照浮动元素的排序规则来排序（左浮动找左浮动，右浮动找右浮动）
+clear: left;
+不要找前面的左浮动元素
+clear: right;
+不要找前面的右浮动元素
+clear: both;
+都不要找
+
+注意点：
+在清除浮动之后，margin属性就会失效
+-->
+</body>
+</html>

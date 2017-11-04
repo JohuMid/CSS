@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画模块-云层效果</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        ul{
+            height: 400px;
+            margin: 100px auto;
+            background-color: skyblue;
+            animation: change 10s linear 0s infinite alternate;
+            position: relative;
+            overflow: hidden;
+        }
+        ul li{
+            width:400%;
+            height: 100%;
+            list-style: none;
+            position: absolute;
+            top: 0;
+        }
+        @keyframes change {
+            from{
+                background-color: skyblue;
+            }
+            to{
+                background-color: black;
+            }
+        }
+        ul li:nth-child(1){
+            background-image: url(images/cloud_one.png);
+            animation: move1 30s linear 0s infinite alternate;
+        }
+        ul li:nth-child(2){
+            background-image: url(images/cloud_two.png);
+            animation: move2 30s linear 0s infinite alternate;
+        }
+        ul li:nth-child(3){
+            background-image: url(images/cloud_three.png);
+            animation: move3 30s linear 0s infinite alternate;
+        }
+        @keyframes move1 {
+            from{
+                margin-left: 0;
+            }
+            to{
+                margin-left: -100%;
+            }
+        }
+        @keyframes move2 {
+            from{
+                margin-left: 0;
+            }
+            to{
+                margin-left: -200%;
+            }
+        }
+        @keyframes move3 {
+            from{
+                margin-left: 0;
+            }
+            to{
+                margin-left: -300%;
+            }
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<!--动画名称 动画时长 动画运动速度 延迟时间 执行次数 往返动画-->
+</body>
+</html>

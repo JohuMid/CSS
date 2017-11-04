@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡模块</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        div{
+            width: 100px;
+            height: 50px;
+            background-color: darkgrey;
+            /*告诉它执行过渡效果*/
+            transition-property: width,background-color;
+            /*过渡效果5s完成*/
+            transition-duration: 3s,3s;
+            /*transition-property: background-color;*/
+            /*transition-duration: 5s;*/
+            transition-delay: 2s;
+        }
+        div:hover{
+            width: 300px;
+            background-color: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+<!--
+1、hover可以用在任何选择器上
+2、过渡效果
+告诉哪个属性需要过渡
+transition-property: width;
+持续时间
+transition-duration: 3s;
+
+注意点：
+当多个属性要执行过渡效果时候，直接逗号隔开
+
+-->
+</html>

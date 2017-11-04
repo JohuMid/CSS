@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清除浮动方式一</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            height: 20px;
+            background-color: #8eff35;
+        }
+        .box2{
+            background-color: #41baff;
+        }
+        .box1 p{
+            float: left;
+            width: 100px;
+            background-color: #e85450;
+        }
+        .box2 p{
+            float: left;
+            width: 100px;
+            background-color: #ffddd9;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <p>我是文字1</p>
+    <p>我是文字1</p>
+    <p>我是文字1</p>
+</div>
+<div class="box2">
+    <p>我是文字2</p>
+    <p>我是文字2</p>
+    <p>我是文字2</p>
+</div>
+<!--
+1、清除浮动的方式一
+给前面一个父元素设置高度
+
+注意点：
+在企业开发中，这种方式用的很少，能不写高度就不写高度。
+
+
+
+-->
+</body>
+</html>
